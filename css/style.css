@@ -39,7 +39,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     background-color: lightgray;
-    text-aling: center;
+    text-align: center;
 }
 td, th {
     border: 1px solid #ccc;
@@ -58,8 +58,8 @@ display: grid;
 grid-template: 
 "header header header"
 "body body right"
-"body body right";
-"footer footer footer"
+"body body right"
+"footer footer footer";
 padding:15px;
 background-color: lightgray;
 }
