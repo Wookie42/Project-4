@@ -1,12 +1,14 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: lightblue;
-    /* text-align: center; */
+    background-color: lightblue!important;
+    text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
    .center {
+    text-align: center;
     float: center;
     text-indent: 50px;
+    width: auto;
   }
 .container{
     max-width: 1536px;
@@ -22,19 +24,16 @@ body {
     float: right;
     width: 25%;
 }
-/* .img {
-    display: block;
-    margin: auto;
-    max-width: auto;
-    background-color: lightgray;
-} */
 h1, h2, h3 {
     color: #333;
     text-align: center;
-                  text-shadow: 1px 1px;
+    text-shadow: 1px 1px;
 }
   p {
     font-size:auto;
+  }
+  a {
+    color:  #0000ff!important;
   }
 table {
     margin: auto;
@@ -52,48 +51,76 @@ ul {
     padding: 0;
     margin: 0;
 }
-                .link {
-                    float:left;
-                }
+.link {
+    float:left;
+}
 .grid{
-display: grid;
-grid-template: 
-"header header header"
-"body body right"
-"body body right"
-"footer footer footer";
-padding:15px;
-background-color: lightgray;
+    display: grid;
+    grid-template: 
+    "header header header"
+    "body body right"
+    "body body right"
+    "footer footer footer";
+    padding:15px;
 }
 .right-item {
-grid-area:right;
-border: solid;
+    grid-area:right;
+    border: solid;
 }
 .body-item {
-grid-area:body;
-border: solid;
+    grid-area:body;
+    border: solid;
+    background-color: lightgray;
 }
 .footer-item{
-grid-area:footer;
-border:outset;
+    grid-area:footer;
+    border:outset;
 }
 .header-item{
-grid-area:header;
+    grid-area:header;
+    background-color: lightgray;
 }
 .gap{
-margin:10px;
+    margin:10px;
 }
+.hover img {
+    transition: filter 0.3s ease;
+}
+  
+.hover img:hover {
+    filter: brightness(50%);
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+}
+.modal-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-body label, 
+.modal-body input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 @media (max-width:1300px){
+    
     .right-element{
         width: auto;
     }
     .body-item{
         width: auto;
+        background-color: lightgray;
     }
     .footer-item{
         width: auto;
+        background-color: lightgray;
     }
     .header-item{
         width: auto;
+        height: 2em;
     }
 }
