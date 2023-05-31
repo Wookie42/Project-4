@@ -124,3 +124,25 @@ ul {
         height: 2em;
     }
 }
+.navbar {
+    background-color: #000;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.navbar a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #ddd;
+    transform: scale(1.2);
+}
