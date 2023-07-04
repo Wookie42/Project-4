@@ -75,6 +75,7 @@ ul {
 .footer-item{
     grid-area:footer;
     border:outset;
+    background-color: lightgray;
 }
 .header-item{
     grid-area:header;
@@ -106,6 +107,8 @@ ul {
     margin-bottom: 10px;
 }
 
+/* Media scaling for smaller devices */
+
 @media (max-width:1300px){
     
     .right-element{
@@ -124,6 +127,7 @@ ul {
         height: 2em;
     }
 }
+/* NavBar */
 .navbar {
     background-color: #000;
     overflow: hidden;
@@ -145,4 +149,42 @@ ul {
 .navbar a:hover {
     color: #ddd;
     transform: scale(1.2);
+}
+/* Dark Mode Button */
+.dark-mode {
+    background-color: darkgray !important;
+    color: darkgray !important;
+}
+
+.dark-mode .grid {
+    background-color: darkgray !important;
+    color: white !important;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode .container,
+.dark-mode .left,
+.dark-mode .body-item,
+.dark-mode .header-item,
+.dark-mode .right-element,
+.dark-mode .flex {
+    background-color: black !important;
+    color: white !important;
+    border-color: darkgray !important;
+}
+.dark-mode .center {
+    background-color: #363333 !important;
+    border-color: darkgray !important;
+}
+.dark-mode .navbar {
+    background-color: darkgray !important;
+    color: white !important;
+    border-color: darkgray !important;
+}
+.dark-mode .footer-item,
+.dark-mode .footer-item table {
+    background-color: black !important;
+    color: white !important;
+    border-color: darkgray !important;
 }
